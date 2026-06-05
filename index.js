@@ -78,4 +78,4 @@ function stringToColor(str) {
   return `hsl(${hash % 360}, 70%, 70%)`;
 }
 
-client.login('your_token_here');
+client.login(process.env.DISCORD_TOKEN);
