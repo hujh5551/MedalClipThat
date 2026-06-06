@@ -12,7 +12,7 @@ const client = new Client({
 client.on('messageCreate', async (message) => {
   if (message.content.toLowerCase() !== 'medal clip that shit') return;
 
-  const messages = await message.channel.messages.fetch({ limit: 20 });
+  const messages = await message.channel.messages.fetch({ limit: 7 });
   const sorted = [...messages.values()].reverse();
 
   const rows = sorted.map(m => {
